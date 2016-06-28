@@ -1,155 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : GrassyGreen 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140310
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>ScienceIE, 2017 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ScienceIE</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 </head>
 <body>
-<div id="fwtitle">
-<div id="toptitle">
-<h1>ScienceIE, 2017 <br /></h1>
-<div id="subtitle"><b>SemEval 2017 Task: Extracting Keyphrases and Relations from Scientific Publications</b></div>
-</div>
-</div>
-<div id="layout-content">
-<h3>Machine learning for scientists</h3>
-<p>The shared task ScienceIE at <a href="http://alt.qcri.org/semeval2017">SemEval 2017</a> deals with extraction of keyphrases automatically given a scientific publication. Moreover, the keyphrase needs to be labelled and should be related to other keyphrases. 
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="#">Homepage</a></li>
+				<li><a href="#">SemEval</a></li>
+				<li><a href="#">Example</a></li>
+				<li><a href="#">Resources</a></li>
+			</ul>
+		</div>
+		<!-- end #menu --> 
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">ScienceIE</a></h1>
+				<p>
+					<a href=http://alt.qcri.org/semeval2017>SemEval 2017</a> 
+					Task: Extracting Keyphrases and Relations from Scientific Publications
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="banner"></div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>ScienceIE</h2>
+				<span class="byline">Machine Learning for Scientists</span> </div>
+			<p>
+ 
+The shared task <strong>ScienceIE</strong> at <a href=http://alt.qcri.org/semeval2017>SemEval 2017</a> deals with extraction of keyphrases automatically given a scientific publication. Moreover, the keyphrase needs to be labelled and should be related to other keyphrases. 
 PROCESS, TASK and MATERIAL form the fundamental objects in scientific works. 
-Scientific research and practice is founded upon gaining, maintaining and understanding the body of existing scientific work in specific areas related to such fundamental objects. Some typical questions, researchers and practitioners more than often face are: </p>
-<ul>
-<li><p>which papers have addressed a specific TASK ?</p>
+Scientific research and practice is founded upon gaining, maintaining and understanding the body of existing scientific work in specific areas related to such fundamental objects. Some typical questions, researchers and practitioners more than often face are: 
+<ul class="style2">
+<li> which papers have addressed a specific TASK ? </li>
+<li> which papers have studied a PROCESS or variants ? </li>
+<li> which papers have utilized such MATERIALS ? </li>
+<li>
+or may be combination of theem, like
+ which papers have addressed this TASK using variants of this PROCESS ? </li>
+</p>
+
+<p>
+Review papers are seldom available in most of the fields, and ability of search engines are limited. In addition to this, often researchers have a vague idea far from the specific requirement which makes it hard to search answers to above questions efficiently. 
+</p>
+
+<p>
+Automatically extracting keyphrases of the scientific documents, then labelling them and building a relationship among them can address the above questions quite efficiently. This will further provide the ultilities that can recommend relevant article to readers, match reviewers to submissions and help in exploration through huge collection of papers.
+</p>
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2>Tweets</h2>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+<div id="footer-wrapper">
+	<div id="footer" class="container">
+		<div id="box1">
+			<div class="title">
+				<h2>Important dates</h2>
+			</div>
+			<ul class="style1">
+				<li>Training data ready &ndash; September 1, 2016</li>
+<li>Test data ready &ndash; December 1, 2016</li>
+<li>Evaluation start &ndash; January 10, 2017</li>
+<li>Evaluation end &ndash; January 31, 2017</li>
+<li>Paper submission due &ndash; February 28, 2017*</li>
+<li>Paper reviews due &ndash; March 31, 2017*</li>
+<li>Camera ready due &ndash; April 30, 2017*</li>
+<li>SemEval workshop &ndash; Summer 2017 co-located with a major NLP conference in 2017<br />
+* tentative</li>
+			</ul>
+		</div>
+		<div id="box2">
+			<div class="title">
+				<h2>Organizers</h2>
+			</div>
+			<ul class="style1">
+				<li><a href="http://isabelleaugenstein.github.io/">Isabelle Augenstein, University College London</a></li>
+<li><a href="http://www.riedelcastro.org/">Sebastian Riedel, University College London</a></li>
+<li>Lakshmi Vikraman, University of Massachusetts Amherst</li>
+<li><a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum, University of Massachusetts Amherst</a></li>
+<li><a href="https://users.ics.aalto.fi/mrinal/">Mrinal Das, University of Massachusetts Amherst</a></li>
+			</ul>
+		</div>
+		<div id="box3">
+			<div class="title">
+				<h2>Follow ScienceIE</h2>
+			</div>
+			<ul class="contact">
+				
+<li>
+<a href="https://twitter.com" class="icon icon-twitter" data-show-count="false"><span>Twitter</span></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </li>
-<li><p>which papers have studied a PROCESS or variants ?</p>
-</li>
-<li><p>which papers have utilized such MATERIALS ?
-or may be combination of theem, like</p>
-</li>
-<li><p>which papers have addressed this TASK using variants of this PROCESS ?</p>
-</li>
-</ul>
-<p>Review papers are seldom available in most of the fields, and ability of search engines are limited. In addition to this, often researchers have a vague idea far from the specific requirement which makes it hard to search answers to above questions efficiently. </p>
-<p>Automatically extracting keyphrases of the scientific documents, then labelling them and building a relationship among them can address the above questions quite efficiently. This will further provide the ultilities that can recommend relevant article to readers, match reviewers to submissions and help in exploration through huge collection of papers. The precise task description is given below.</p>
-<h2>Task description</h2>
-<p>There are three subtasks:</p>
-<h3>Subtask (A): Identification of keyphrases</h3>
-<p>Given a scientific publication, the goal of this task is to identify all the keyphrases in the document. </p>
-<h3>Subtask (B): Classification of identified keyphrases</h3>
-<p>In this task, each keyphrase needs to be labelled by one of three types: (i) PROCESS, (ii) TASK, and (iii) MATERIAL.</p>
-<dl>
-<dt>PROCESS</dt>
-<dd><p>
-Keyphrases relating to some scientific model, algorithm or process should be labelled by PROCESS.</p></dd>
-</dl>
-<dl>
-<dt>TASK</dt>
-<dd><p></p></dd>
-</dl>
-<dl>
-<dt>MATERIAL</dt>
-<dd><p></p></dd>
-</dl>
-<h3>Subtask (C): Extraction of relationships between two identified keyphrases</h3>
-<p>Every pair of keyphrases need to be labelled by one of three types: (i) HYPONYM-OF, (ii) SYNONYM-OF, and (iii) NONE.</p>
-<dl>
-<dt>HYPONYM-OF</dt>
-<dd><p>
-The realtionship between two keyphrases <i>A</i> and <i>B</i> is HYPONYM-OF if semantic field of <i>A</i> is included within that of <i>B</i>, for example <i>Red</i> HYPONYM-OF <i>Color</i>. We denote this relationship as <i>A</i> HYPONYM-OF <i>B</i>.</p></dd>
-</dl>
-<h2>Example </h2>
-<p>The first part is the plain text paragraph (with keyphrases <tt>highlighted</tt> for better readability), followed by stand-off keyphrase annotations based on character offsets, followed relation annotations.</p>
-<h3>Input: excerpt from a scientific publication</h3>
-<p><tt>Information extraction</tt> is the process of extracting structured data from unstructured text, which is relevant for several end-to-end tasks, including <tt>question answering</tt>. This paper addresses the tasks of <tt>named entity recognition</tt> (<tt>NER</tt>), a subtask of <tt>information extraction</tt>, using <tt>conditional random fields</tt> (<tt>CRF</tt>). Our method is evaluated on the <tt>ConLL-2003 NER corpus</tt>. </p>
-<h3>Subtask (A): Identification of keyphrases</h3>
-<table id="TABLENAME">
-<tr class="r1"><td class="c1"><b>ID</b> </td><td class="c2"> <b>Start</b> </td><td class="c3"> <b>End</b> </td></tr>
-<tr class="r2"><td class="c1">0 </td><td class="c2"> 0 </td><td class="c3"> 22 </td></tr>
-<tr class="r3"><td class="c1">1 </td><td class="c2">150 </td><td class="c3"> 168 </td></tr>
-<tr class="r4"><td class="c1">2 </td><td class="c2">204 </td><td class="c3"> 228 </td></tr>
-<tr class="r5"><td class="c1">3 </td><td class="c2"> 230 </td><td class="c3"> 233 </td></tr>
-<tr class="r6"><td class="c1">4 </td><td class="c2"> 249 </td><td class="c3"> 271 </td></tr>
-<tr class="r7"><td class="c1">5 </td><td class="c2"> 279 </td><td class="c3"> 304 </td></tr>
-<tr class="r8"><td class="c1">6 </td><td class="c2"> 306 </td><td class="c3"> 309 </td></tr>
-<tr class="r9"><td class="c1">7 </td><td class="c2"> 343 </td><td class="c3"> 364 
-</td></tr></table>
-<h3>Subtask (B): Classification of identified keyphrases</h3>
-<table id="TABLENAME">
-<tr class="r1"><td class="c1"><b>ID</b> </td><td class="c2"> <b>Type</b>  </td></tr>
-<tr class="r2"><td class="c1">0 </td><td class="c2"> TASK </td></tr>
-<tr class="r3"><td class="c1">1 </td><td class="c2"> TASK </td></tr>
-<tr class="r4"><td class="c1">2 </td><td class="c2"> TASK  </td></tr>
-<tr class="r5"><td class="c1">3 </td><td class="c2"> TASK  </td></tr>
-<tr class="r6"><td class="c1">4 </td><td class="c2"> TASK </td></tr>
-<tr class="r7"><td class="c1">5 </td><td class="c2"> PROCESS  </td></tr>
-<tr class="r8"><td class="c1">6 </td><td class="c2"> PROCESS  </td></tr>
-<tr class="r9"><td class="c1">7 </td><td class="c2"> MATERIAL 
-</td></tr></table>
-<h3>Subtask (C): Extraction of relationship between two identified keyphrases</h3>
-<table id="TABLENAME">
-<tr class="r1"><td class="c1"><b>ID1</b> </td><td class="c2"> <b>ID2</b> </td><td class="c3"> <b>Type</b> </td></tr>
-<tr class="r2"><td class="c1">2 </td><td class="c2"> 0 </td><td class="c3"> HYPONYM-OF </td></tr>
-<tr class="r3"><td class="c1">2 </td><td class="c2"> 3 </td><td class="c3"> SYNONYM-OF </td></tr>
-<tr class="r4"><td class="c1">5 </td><td class="c2"> 6 </td><td class="c3"> SYNONYM-OF 
-</td></tr></table>
-<h2>Resources</h2>
-<h3>Corpus description</h3>
-<p>A corpus for the task will be built from <a href="http://www.sciencedirect.com">ScienceDirect</a> open access publications and will be available freely for participants, without the need to sign a copyright agreement.
-Publications will be provided in plain text. 500 journal articles evenly distributed among the domains Computer Science, Material Sciences and Physics will be sampled.
-The training data part of the corpus will consist of 350 documents, 50 will be kept for development and 100 for testing. This is similar to the pilot task, for which 144 articles were used for training, 40 for development and for 100 testing.</p>
-<h3>Simple baselines</h3>
-<p>We will provide simple baselines.</p>
-<h3>Downloads</h3>
-<h2>Evaluation scheme</h2>
-<h3>Scenarios</h3>
-<p>There will be three evaluation scenarios:</p>
-<ol>
-<li><p>Only plain text is given (Subtasks A, B, C)</p>
-</li>
-<li><p>Plain text with manually annotated keyphrase boundaries are given (Subtasks B, C)</p>
-</li>
-<li><p>Plain text with manually annotated keyphrases and their types are given (Subtask C)</p>
-</li>
-</ol>
-<h3>Metrics</h3>
-<p>The output of systems is matched exactly against the gold standard. The traditionally used metrics of precision, recall and F1-score are computed and the micro-average of those metrics across publications of the three genres are calculated. These metrics are calculated for Subtasks A, B and C.</p>
-<h2>System submission</h2>
-<h2>Organization</h2>
-<p>Please subscribe to (<tt>group ?</tt>) for announcements, discussion and questions. See the schedule for important dates. </p>
-<h3>Schedule</h3>
-<ul>
-<li><p>Training data ready &ndash; September 1, 2016</p>
-</li>
-<li><p>Test data ready &ndash; December 1, 2016</p>
-</li>
-<li><p>Evaluation start &ndash; January 10, 2017</p>
-</li>
-<li><p>Evaluation end &ndash; January 31, 2017</p>
-</li>
-<li><p>Paper submission due &ndash; February 28, 2017*</p>
-</li>
-<li><p>Paper reviews due &ndash; March 31, 2017*</p>
-</li>
-<li><p>Camera ready due &ndash; April 30, 2017*</p>
-</li>
-<li><p>SemEval workshop &ndash; Summer 2017 co-located with a major NLP conference in 2017<br />
-* tentative</p>
-</li>
-</ul>
-<h3>Organizers</h3>
-<ul>
-<li><p><a href="http://isabelleaugenstein.github.io/">Isabelle Augenstein, University College London</a></p>
-</li>
-<li><p><a href="http://www.riedelcastro.org/">Sebastian Riedel, University College London</a></p>
-</li>
-<li><p>Lakshmi Vikraman, University of Massachusetts Amherst</p>
-</li>
-<li><p><a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum, University of Massachusetts Amherst</a></p>
-</li>
-<li><p><a href="https://users.ics.aalto.fi/mrinal/">Mrinal Das, University of Massachusetts Amherst</a></p>
-</li>
-</ul>
+			</ul>
+				<a href="#" class="button">Read More</a> </div>
+		</div>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
 </body>
 </html>
