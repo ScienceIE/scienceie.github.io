@@ -250,7 +250,7 @@ hr {
 
 	#logo 
 	{
-		width: 600px;
+		width: 800px;
 		height: 100px;
 		margin: 0 auto;
 		padding: 2em 0em;
@@ -262,10 +262,22 @@ hr {
 		letter-spacing: 0.10em;
 		font-size: 3em;
 	}
-	
+	#logo h2
+	{
+		/*letter-spacing: 0.10em;*/
+		font-size: 1.5em;
+		
+	}
+	#logo h3
+	{
+		letter-spacing: 0.10em;
+		font-size: 1em;
+		color: #EEA7C1;
+	}
 	#logo p 
 	{
 		/*letter-spacing: 0.10em;*/
+		font-size: 1.2em;
 		color: #FFF;
 	}
 	
