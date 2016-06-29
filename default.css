@@ -179,7 +179,7 @@ hr {
 	.title
 	{
 		margin-bottom: 2em;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 
 	.title h2
@@ -192,7 +192,7 @@ hr {
 	.title .byline
 	{
 		letter-spacing: 0.15em;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		font-weight: 400;
 		font-size: 0.90em;
 		color: #6F6F6F;
@@ -250,11 +250,11 @@ hr {
 
 	#logo 
 	{
-		width: 500px;
+		width: 600px;
 		height: 100px;
 		margin: 0 auto;
 		padding: 2em 0em;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 	
 	#logo h1
@@ -265,7 +265,7 @@ hr {
 	
 	#logo p 
 	{
-		letter-spacing: 0.10em;
+		/*letter-spacing: 0.10em;*/
 		color: #FFF;
 	}
 	
@@ -567,7 +567,7 @@ hr {
 	#box2
 	{
 		float: left;
-		width: 354px;
+		width: 454px;
 		margin-left: 24px;
 		padding-right: 30px;
 	}
@@ -575,7 +575,7 @@ hr {
 	#box3
 	{
 		float: right;
-		width: 344px;
+		width: 244px;
 		padding-left: 40px;
 	}
 

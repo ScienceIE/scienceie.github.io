@@ -1,0 +1,150 @@
+# jemdoc: fwtitle, nofooter
+# jemdoc: nodefaultcss, addcss{jemdoc.css}
+== ScienceIE, 2017 \n
+ *SemEval 2017 Task: Extracting Keyphrases and Relations from Scientific Publications*
+
+=== Machine learning for scientists
+ 
+The shared task ScienceIE at [http://alt.qcri.org/semeval2017 SemEval 2017] deals with extraction of keyphrases automatically given a scientific publication. Moreover, the keyphrase needs to be labelled and should be related to other keyphrases. 
+PROCESS, TASK and MATERIAL form the fundamental objects in scientific works. 
+Scientific research and practice is founded upon gaining, maintaining and understanding the body of existing scientific work in specific areas related to such fundamental objects. Some typical questions, researchers and practitioners more than often face are: 
+- which papers have addressed a specific TASK ?
+- which papers have studied a PROCESS or variants ?
+- which papers have utilized such MATERIALS ?
+or may be combination of theem, like
+- which papers have addressed this TASK using variants of this PROCESS ?
+
+Review papers are seldom available in most of the fields, and ability of search engines are limited. In addition to this, often researchers have a vague idea far from the specific requirement which makes it hard to search answers to above questions efficiently. 
+
+Automatically extracting keyphrases of the scientific documents, then labelling them and building a relationship among them can address the above questions quite efficiently. This will further provide the ultilities that can recommend relevant article to readers, match reviewers to submissions and help in exploration through huge collection of papers. The precise task description is given below.
+
+
+== Task description
+There are three subtasks:
+=== Subtask (A): Identification of keyphrases
+ Given a scientific publication, the goal of this task is to identify all the keyphrases in the document. 
+
+=== Subtask (B): Classification of identified keyphrases
+In this task, each keyphrase needs to be labelled by one of three types: (i) PROCESS, (ii) TASK, and (iii) MATERIAL.
+
+: {PROCESS}
+Keyphrases relating to some scientific model, algorithm or process should be labelled by PROCESS.
+
+: {TASK}
+
+: {MATERIAL}
+
+
+=== Subtask (C): Extraction of relationships between two identified keyphrases
+ Every pair of keyphrases need to be labelled by one of three types: (i) HYPONYM-OF, (ii) SYNONYM-OF, and (iii) NONE.
+
+:{HYPONYM-OF} 
+The realtionship between two keyphrases /A/ and /B/ is HYPONYM-OF if semantic field of /A/ is included within that of /B/, for example /Red/ HYPONYM-OF /Color/. We denote this relationship as /A/ HYPONYM-OF /B/.
+
+== Example 
+
+The first part is the plain text paragraph (with keyphrases +highlighted+ for better readability), followed by stand-off keyphrase annotations based on character offsets, followed relation annotations.
+
+
+
+
+=== Input: excerpt from a scientific publication
+
++Information extraction+ is the process of extracting structured data from unstructured text, which is relevant for several end-to-end tasks, including +question answering+. This paper addresses the tasks of +named entity recognition+ (+NER+), a subtask of +information extraction+, using +conditional random fields+ (+CRF+). Our method is evaluated on the +ConLL-2003 NER corpus+. 
+
+=== Subtask (A): Identification of keyphrases
+
+~~~
+{}{table}{TABLENAME}
+*ID* | *Start* | *End* ||
+0 | 0 | 22 ||
+1 |150 | 168 ||
+2 |204 | 228 ||
+3 | 230 | 233 ||
+4 | 249 | 271 ||
+5 | 279 | 304 ||
+6 | 306 | 309 ||
+7 | 343 | 364 
+~~~
+
+
+=== Subtask (B): Classification of identified keyphrases
+
+
+~~~
+{}{table}{TABLENAME}
+*ID* | *Type*  ||
+0 | TASK ||
+1 | TASK ||
+2 | TASK  ||
+3 | TASK  ||
+4 | TASK ||
+5 | PROCESS  ||
+6 | PROCESS  ||
+7 | MATERIAL 
+~~~
+
+=== Subtask (C): Extraction of relationship between two identified keyphrases
+
+
+~~~
+{}{table}{TABLENAME}
+*ID1* | *ID2* | *Type* ||
+2 | 0 | HYPONYM-OF ||
+2 | 3 | SYNONYM-OF ||
+5 | 6 | SYNONYM-OF 
+~~~
+
+
+== Resources
+
+=== Corpus description
+A corpus for the task will be built from [http://www.sciencedirect.com ScienceDirect] open access publications and will be available freely for participants, without the need to sign a copyright agreement.
+Publications will be provided in plain text. 500 journal articles evenly distributed among the domains Computer Science, Material Sciences and Physics will be sampled.
+The training data part of the corpus will consist of 350 documents, 50 will be kept for development and 100 for testing. This is similar to the pilot task, for which 144 articles were used for training, 40 for development and for 100 testing.
+
+=== Simple baselines
+We will provide simple baselines.
+
+=== Downloads
+
+
+
+== Evaluation scheme
+=== Scenarios
+There will be three evaluation scenarios:
+. Only plain text is given (Subtasks A, B, C)
+. Plain text with manually annotated keyphrase boundaries are given (Subtasks B, C)
+. Plain text with manually annotated keyphrases and their types are given (Subtask C)
+
+=== Metrics
+The output of systems is matched exactly against the gold standard. The traditionally used metrics of precision, recall and F1-score are computed and the micro-average of those metrics across publications of the three genres are calculated. These metrics are calculated for Subtasks A, B and C.
+
+
+
+
+== System submission
+
+
+== Organization
+Please subscribe to (+group ?+) for announcements, discussion and questions. See the schedule for important dates. 
+
+=== Schedule
+- Training data ready -- September 1, 2016
+- Test data ready -- December 1, 2016
+- Evaluation start -- January 10, 2017
+- Evaluation end -- January 31, 2017
+- Paper submission due -- February 28, 2017*
+- Paper reviews due -- March 31, 2017*
+- Camera ready due -- April 30, 2017*
+- SemEval workshop -- Summer 2017 co-located with a major NLP conference in 2017\n
+* tentative
+
+=== Organizers
+
+- [http://isabelleaugenstein.github.io/ Isabelle Augenstein, University College London]
+- [http://www.riedelcastro.org/ Sebastian Riedel, University College London]
+- Lakshmi Vikraman, University of Massachusetts Amherst
+- [https://people.cs.umass.edu/~mccallum/ Andrew McCallum, University of Massachusetts Amherst]
+- [https://users.ics.aalto.fi/mrinal/ Mrinal Das, University of Massachusetts Amherst]
+
