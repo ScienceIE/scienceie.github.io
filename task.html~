@@ -56,7 +56,7 @@ Released   : 20140310
 				<span class="byline"></span> 
 			</div>
 	<p>There are three subtasks:</p>
-<br>
+<br><br>
 <h3 class="style1">Subtask (A): Identification of keyphrases</h3>
 <br>
 <p>Given a scientific publication, the goal of this task is to identify all the keyphrases in the document. </p>
@@ -87,7 +87,7 @@ Released   : 20140310
 	</p></dd>
 </dl>
 
-<br><br>
+<br>
 <h3 class="style1">Subtask (C): Extraction of relationships between two identified keyphrases</h3>
 <br>
 <p>Every pair of keyphrases need to be labelled by one of three types: (i) HYPONYM-OF, (ii) SYNONYM-OF, and (iii) NONE.</p>
