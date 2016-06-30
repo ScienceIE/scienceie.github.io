@@ -17,6 +17,10 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
+	h3.style1{
+		color: #16a085;
+		font-weight: 500;
+	}
 
 p, ol, ul {
 	margin-top: 0px;
@@ -95,7 +99,7 @@ hr {
 	
 	ul.style1 li
 	{
-		border-top: solid 1px #E5E5E5;
+		/*border-top: solid 1px #E5E5E5;*/
 		padding: 0.80em 0;
 	}
 	

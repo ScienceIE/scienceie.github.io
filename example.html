@@ -28,12 +28,13 @@ Released   : 20140310
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
-				<li><a href=index.html>Homepage</a></li>
-				<li><a href="#">SemEval</a></li>
-				<li><a href=task.html>Tasks</a></li>
+				<li><a href=index.html>Home</a></li>
+				<li><a href=http://alt.qcri.org/semeval2017/>SemEval</a></li>
+				<li><a href=task.html>Task</a></li>
 				<li class="current_page_item"><a href="#">Example</a></li>
 				<li><a href=resources.html>Resources</a></li>
 				<li><a href=submission.html>Submission</a></li>
+				<li><a href=dates.html>Organization</a></li>
 			</ul>
 		</div>
 		<!-- end #menu --> 
@@ -42,10 +43,7 @@ Released   : 20140310
 			<div id="logo">
 				<h1><a href="#">ScienceIE</a></h1>
 				<h3><a href="#">Machine Learning for Scientists</a></h3>
-				<p>
-					<a href=http://alt.qcri.org/semeval2017>SemEval 2017</a> 
-					Task: Extracting Keyphrases and Relations from Scientific Publications
-				</p>
+				<p>SemEval 2017 Task 10: Extracting Keyphrases and Relations from Scientific Publications</p>
 			</div>
 		</div>
 	</div>
@@ -59,13 +57,15 @@ Released   : 20140310
 			</div>
 
 	<p>The first part is the plain text paragraph (with keyphrases <tt>type-faced</tt> for better readability), followed by stand-off keyphrase annotations based on character offsets, followed relation annotations.</p>
+<br>
 
-<h3>Input: excerpt from a scientific publication</h3>
+<h3 class="style1">Input: excerpt from a scientific publication</h3>
 <br>
 <p><tt>Information extraction</tt> is the process of extracting structured data from unstructured text, which is relevant for several end-to-end tasks, including <tt>question answering</tt>. This paper addresses the tasks of <tt>named entity recognition</tt> (<tt>NER</tt>), a subtask of <tt>information extraction</tt>, using <tt>conditional random fields</tt> (<tt>CRF</tt>). Our method is evaluated on the <tt>ConLL-2003 NER corpus</tt>. </p>
 
 <br><br>
-<h3>Subtask (A): Identification of keyphrases</h3>
+<h3 class="style1">Subtask (A): Identification of keyphrases</h3>
+<br>
 <table id="TABLENAME">
 <tr class="r1"><td class="c1"><b>ID</b> </td><td class="c2"> <b>Start</b> </td><td class="c3"> <b>End</b> </td></tr>
 <tr class="r2"><td class="c1">0 </td><td class="c2"> 0 </td><td class="c3"> 22 </td></tr>
@@ -78,10 +78,9 @@ Released   : 20140310
 <tr class="r9"><td class="c1">7 </td><td class="c2"> 343 </td><td class="c3"> 364 
 </td></tr></table>
 
+<br><br>
+<h3 class="style1">Subtask (B): Classification of identified keyphrases</h3>
 <br>
-<br>
-
-<h3>Subtask (B): Classification of identified keyphrases</h3>
 <table id="TABLENAME">
 <tr class="r1"><td class="c1"><b>ID</b> </td><td class="c2"> <b>Type</b>  </td></tr>
 <tr class="r2"><td class="c1">0 </td><td class="c2"> TASK </td></tr>
@@ -94,9 +93,9 @@ Released   : 20140310
 <tr class="r9"><td class="c1">7 </td><td class="c2"> MATERIAL 
 </td></tr></table>
 
+<br><br>
+<h3 class="style1">Subtask (C): Extraction of relationship between two identified keyphrases</h3>
 <br>
-<br>
-<h3>Subtask (C): Extraction of relationship between two identified keyphrases</h3>
 <table id="TABLENAME">
 <tr class="r1"><td class="c1"><b>ID1</b> </td><td class="c2"> <b>ID2</b> </td><td class="c3"> <b>Type</b> </td></tr>
 <tr class="r2"><td class="c1">2 </td><td class="c2"> 0 </td><td class="c3"> HYPONYM-OF </td></tr>
