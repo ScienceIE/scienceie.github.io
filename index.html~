@@ -42,7 +42,7 @@ Released   : 20140310
 		<div id="header" class="container">
 			<div id="logo">
 				<h1><a href="#">ScienceIE</a></h1>
-				<h3><a href="#">Machine Reading for Scientists</a></h3>
+				<h3><a href="#">Machine Learning for Scientists</a></h3>
 				<p>SemEval 2017 Task 10: Extracting Keyphrases and Relations from Scientific Publications</p>
 			</div>
 		</div>

@@ -23,16 +23,16 @@ Released   : 20140310
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 </head>
-<body class="no-sidebar">
+<body>
 <div id="wrapper">
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
 				<li><a href=index.html>Home</a></li>
 				<li><a href=http://alt.qcri.org/semeval2017/>SemEval</a></li>
-				<li class="current_page_item"><a href="#">Task</a></li>
+				<li><a href=task.html>Task</a></li>
 				<li><a href=example.html>Example</a></li>
-				<li><a href=evaluation.html>Evaluation</a></li>
+				<li class="current_page_item"><a href="#">Evaluation</a></li>
 				<li><a href=resources.html>Resources</a></li>
 				<li><a href=dates.html>Organization</a></li>
 			</ul>
@@ -52,62 +52,32 @@ Released   : 20140310
 	<div id="page" class="container">
 		<div id="content">
 			<div class="title">
-				<h2>Task Description</h2>
-				<span class="byline"></span> 
+				<h2>Evaluation</h2>
 			</div>
-	<p>There are three subtasks:</p>
+	
+		
+<br><br>
+<h3 class="style1">Schemes</h3>
 <br>
-<h3 class="style1">Subtask (A): Identification of keyphrases</h3>
-<br>
-<p>Given a scientific publication, the goal of this task is to identify all the keyphrases in the document. </p>
+<p>There will be three evaluation scenarios:</p>
+<ol>
+<li><p>Only plain text is given (Subtasks A, B, C)</p>
+</li>
+<li><p>Plain text with manually annotated keyphrase boundaries are given (Subtasks B, C)</p>
+</li>
+<li><p>Plain text with manually annotated keyphrases and their types are given (Subtask C)</p>
+</li>
+</ol>
 
 <br><br>
-<h3 class="style1">Subtask (B): Classification of identified keyphrases</h3>
+<h3 class="style1">Metrics</h3>
 <br>
-<p>In this task, each keyphrase needs to be labelled by one of three types: (i) PROCESS, (ii) TASK, and (iii) MATERIAL.</p>
-
-<dl>
-<dt>PROCESS</dt>
-	<dd><p>
-		Keyphrases relating to some scientific model, algorithm or process should be labelled by PROCESS.
-	</p></dd>
-</dl>
-
-<dl>
-<dt>TASK</dt>
-	<dd><p>
-		Keyphrases those denote the application, end goal, problem, task  should be labelled by TASK.
-	</p></dd>
-</dl>
-
-<dl>
-<dt>MATERIAL</dt>
-	<dd><p>
-		MATERIAL keyphrases identify the resources used in the paper.
-	</p></dd>
-</dl>
-
-<br><br>
-<h3 class="style1">Subtask (C): Extraction of relationships between two identified keyphrases</h3>
-<br>
-<p>Every pair of keyphrases need to be labelled by one of three types: (i) HYPONYM-OF, (ii) SYNONYM-OF, and (iii) NONE.</p>
-
-<dl>
-<dt>HYPONYM-OF</dt>
-<dd><p>
-The realtionship between two keyphrases <i>A</i> and <i>B</i> is HYPONYM-OF if semantic field of <i>A</i> is included within that of <i>B</i>. One example is <i>Red</i> HYPONYM-OF <i>Color</i>.</p></dd>
-</dl>
-
-<dl>
-<dt>SYNONYM-OF</dt>
-<dd><p>
-The realtionship between two keyphrases <i>A</i> and <i>B</i> is SYNONYM-OF if they both denote the same semantic field, for example <i>Machine Learning</i> SYNONYM-OF <i>ML</i>. 
-</p></dd>
-</dl>
+<p>The output of systems is matched exactly against the gold standard. The traditionally used metrics of precision, recall and F1-score are computed and the micro-average of those metrics across publications of the three genres are calculated. These metrics are calculated for Subtasks A, B and C.</p>
 
 
 		</div>
 	</div>
 </div>
+	
 </body>
 </html>
