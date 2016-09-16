@@ -56,12 +56,22 @@ Released   : 20140310
 				<span class="byline"></span> 
 			</div>
 
-	<p>The first part is the plain text paragraph (with keyphrases <tt>type-faced</tt> for better readability), followed by stand-off keyphrase annotations based on character offsets, followed by relation annotations.</p>
+	<p>
+    The first part is the plain text paragraph (with keyphrases <tt>type-faced</tt> for better readability), followed by the paragraph annotations visualised with brat, followed by stand-off keyphrase annotations based on character offsets and by relation annotations.
+    </p>
 <br>
 
 <h3 class="style1">Input: excerpt from a scientific publication</h3>
 <br>
-<p><tt>Information extraction</tt> is the process of extracting structured data from unstructured text, which is relevant for several end-to-end tasks, including <tt>question answering</tt>. This paper addresses the tasks of <tt>named entity recognition</tt> (<tt>NER</tt>), a subtask of <tt>information extraction</tt>, using <tt>conditional random fields</tt> (<tt>CRF</tt>). Our method is evaluated on the <tt>ConLL-2003 NER corpus</tt>. </p>
+<p>
+<tt>Information extraction</tt> is the process of extracting structured data from unstructured text, which is relevant for several end-to-end tasks, including <tt>question answering</tt>. This paper addresses the tasks of <tt>named entity recognition</tt> (<tt>NER</tt>), a subtask of <tt>information extraction</tt>, using <tt>conditional random fields</tt> (<tt>CRF</tt>). Our method is evaluated on the <tt>ConLL-2003 NER corpus</tt>. </p>
+
+
+<h3 class="style1">Annotated paragraph visualised with brat</h3>
+<br>
+<p>
+<img src="example.png" width="789" height="142">
+</p>
 
 <br><br>
 <h3 class="style1">Subtask (A): Identification of keyphrases</h3>
@@ -98,10 +108,11 @@ Released   : 20140310
 <br>
 <table id="TABLENAME">
 <tr class="r1"><td class="c1"><b>ID1</b> </td><td class="c2"> <b>ID2</b> </td><td class="c3"> <b>Type</b> </td></tr>
-<tr class="r2"><td class="c1">2 </td><td class="c2"> 0 </td><td class="c3"> HYPONYM-OF </td></tr>
 <tr class="r3"><td class="c1">2 </td><td class="c2"> 3 </td><td class="c3"> SYNONYM-OF </td></tr>
-<tr class="r4"><td class="c1">5 </td><td class="c2"> 6 </td><td class="c3"> SYNONYM-OF 
-</td></tr></table>
+<tr class="r4"><td class="c1">3 </td><td class="c2"> 4 </td><td class="c3"> HYPONYM-OF </td></tr>
+<tr class="r4"><td class="c1">5 </td><td class="c2"> 6 </td><td class="c3"> SYNONYM-OF </td></tr>
+
+</table>
 		</div>
 	</div>
 </div>
